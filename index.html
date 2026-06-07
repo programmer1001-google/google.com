@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
+<html lang="en">
 <head>
-  <title>Login Demo</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>google.com</title>
 
   <style>
     * {
@@ -96,6 +99,22 @@
     .error {
       color: red;
     }
+    .learn-more {
+  color: #1a73e8;
+  cursor: pointer;
+  font-weight: 500;
+   }
+
+   .learn-more:hover {
+  text-decoration: underline;
+   }
+   .forgot {
+    text-align: left;
+    font-size: 13px;
+    margin: 10px 0 20px;
+    color: #1a73e8;
+    cursor: pointer;
+   }
 
     @media (max-width: 480px) {
       .container {
@@ -131,10 +150,13 @@
       placeholder="Password"
       required
     >
-
+    <div class="forgot">Forgot email?</div>
     <button type="submit">
       Sign In
     </button>
+
+    <p>Not your computer? Use Guest mode to sign in privately.</p>
+    <p class="learn-more">Learn more</p>
 
   </form>
 
